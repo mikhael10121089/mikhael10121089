@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Wisata Neg'ri Indah</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="w3.css">
+	<link href="fa/css/all.css" rel="stylesheet">
+</head>
+<body>
+	<div class="w3-container-fluid">
+		<img src="aset/1.jpg" alt="" width="100%" height="40%">
+		</div>
+		<div class="w3-bar w3-black">
+		 <button class="w3-bar-item w3-button" onclick="openKota('Pantai')">Pantai Nihiwatu</button>
+		 <button class="w3-bar-item w3-button" onclick="openKota('Gurun')">Gurun Namib Selatan</button>
+		 <button class="w3-bar-item w3-button" onclick="openKota('Island')">Vancouver Island</button>
+		 <button class="w3-bar-item w3-button" onclick="openKota('Hutan')">Hutan Moawi</button>
+		 <button class="w3-bar-item w3-button" onclick="openKota('Kontak')">Kontak (Profil) </button>
+	</div>
+
+	<div class="container" style="" >
+		<h1>Wisata Neg'ri Indah</h1>
+		<p><i>Klik Navbar Untuk Membaca lebih, Setelah Itu Scroll Ke Bawah</i></p>
+		<div class="content-slide">
+			<div class="imgslide fade">
+				<div class="numberslide">1 / 4</div>
+				<img src="aset/1.jpg" alt="">
+				<div class="text">Pantai</div>
+			</div>
+
+			<div class="imgslide fade">
+				<div class="numberslide">2 / 4</div>
+				<img src="aset/2.jpg" alt="">
+				<div class="text">Gurun</div>
+			</div>
+
+			<div class="imgslide fade">
+				<div class="numberslide">3 / 4</div>
+				<img src="aset/3.jpg" alt="">
+				<div class="text">Tebing</div>
+			</div>			
+
+			<div class="imgslide fade">
+				<div class="numberslide">4 / 4</div>
+				<img src="aset/4.jpg" alt="">
+				<div class="text">Hutan</div>
+			</div>
+
+			<a class="prev" onClick="nextslide(-1)">&#10094;</a>
+			<a class="next" onClick="nextslide(1)">&#10095;</a>
+									
+		</div>
+
+		<div class="page">
+			<span class="dot" onClick="dotslide(1)"></span>
+			<span class="dot" onClick="dotslide(2)"></span>
+			<span class="dot" onClick="dotslide(3)"></span>
+			<span class="dot" onClick="dotslide(4)"></span>
+		</div>
+		<center><hr></center>
+
+	</div>
+
+	<div id="Pantai" class="w3-container kota w3-animate-zoom w3-center" style="display:none">
+	<h2 style="text-shadow: 1px 1px 1px grey">Pantai Nihiwatu</h2>
+	<img src="aset/1.jpg" alt="">
+	<p>
+	Siapa yang tidak tahu Hawai? Pasti terbesit suatu pemandangan pantai yang indah saat kita mendengar kata Hawai. Ternyata Indonesia, negara kita memiliki pantai yang mirip seperti pantai yang ada di Hawai loh, bahkan lebih bagus yaitu Pantai Nihiwatu yang berletak di Sumba, Nusa Tenggara Timur (NTT)
+	</p>
+	<p>
+		Kami menyediakan tiket, kamar, dan fasilitas lain jika Anda tertarik pergi ke Pantai Nihiwatu  <br>
+	</p>
+
+	<h2>Tiket Terbatas!</h2>
+	<section id="kontak" class="section">
+		<div class="w3-container w3-center">
+			<div class="w3-row">
+				<div class="w3-col m3">
+					<i class="fa fa-hand-holding-heart w3-red w3-padding-small w3-rounded-xlarge"></i>
+					<h3>Nyaman</h3>
+					
+				</div>			
+
+				<div class="w3-col m3">
+					<i class="fa fa-dollar-sign w3-red w3-padding-small w3-rounded-xlarge"></i>
+					<h3>Terjangkau</h3>
+					
+				</div>			
+
+				<div class="w3-col m3">
+					<i class="fa fa-cubes w3-red w3-padding-small w3-rounded-xlarge"></i>
+					<h3>Lengkap</h3>
+					
+				</div>		
+
+				<div class="w3-col m3">
+					<i class="fa fa-glass-cheers w3-red w3-padding-small w3-rounded-xlarge"></i>
+					<h3>Pengalaman Super Indah </h3>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+	<h2>Jika tertarik silahkan isi form pendaftaran di bawah ini <br><i class="far fa-hand-point-down"></i></h2>
+
+	    <form class="w3-form" name="form3">
+		<label class="w3-left">Nama</label>
+		<input class="w3-input" type="text" required>
+		<br>
+		<label class="w3-left">Jumlah</label>
+		<input class="w3-input" type="number" name="jumlah" required>	
+		<br>
+		<label class="w3-left">Harga /per orang</label>
+		<input class="w3-input" type="text" disabled name="harga" value="2.000.000">		
+		<br>
+		<label class="w3-left">Total Harga</label>
+		<input class="w3-input" type="text" disabled name="total">
+		<br>
+		<button class="w3-button w3-white" type="button" onclick="proses4()">Check Out</button>
+		<button class="w3-button w3-white" type="reset">Reset</button>
+	</form>
+	</div>
+
+	<div id="Gurun" class="w3-container kota w3-animate-zoom w3-center" style="display:none">
+	 <h2 style="text-shadow: 1px 1px 1px grey">Gurun Namib Selatan
+
+</h2>
+	 <img src="aset/2.jpg" alt="" width="20%">
+	 <p>
+	    Siapa yang tidak asing dengan foto di atas? Yap benar sekali foto yang pernah menjadi wallpaper perangkat lunak Windows 7 ini benar-benar ada lho.. <br>
+	    Apakah Anda Tertarik untuk mengunjungi gurun yang sangat terkenal ini?
+	 </p>
+
+	 <p>Kami menyediakan tiket, kamar, dan fasilitas lain jika Anda tertarik pergi ke Gurun Namib Selatan </p>
+	 <h2>Tiket Terbatas!</h2>
+
+
+<section id="kontak" class="section">
+		<div class="w3-container w3-center">
+			<div class="w3-row">
+				<div class="w3-col m3">
+					<i class="fa fa-hand-holding-heart w3-red w3-padding-small w3-rounded-xlarge"></i>
+					<h3>Nyaman</h3>
+					
+				</div>			
+
+				<div class="w3-col m3">
+					<i class="fa fa-dollar-sign w3-red w3-padding-small w3-rounded-xlarge"></i>
+					<h3>Terjangkau</h3>
+					
+				</div>			
+
+				<div class="w3-col m3">
+					<i class="fa fa-cubes w3-red w3-padding-small w3-rounded-xlarge"></i>
+					<h3>Lengkap</h3>
+					
+				</div>		
+
+				<div class="w3-col m3">
+					<i class="fa fa-glass-cheers w3-red w3-padding-small w3-rounded-xlarge"></i>
+					<h3>Pengalaman Super Indah </h3>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+	<h2>Jika tertarik silahkan isi form pendaftaran di bawah ini <br><i class="far fa-hand-point-down"></i></h2>
+	    <form class="w3-form" name="form2">
+		<label class="w3-left">Nama</label>
+		<input class="w3-input" type="text" required>
+		<br>
+		<label class="w3-left">Jumlah</label>
+		<input class="w3-input" type="number" name="jumlah" required>	
+		<br>
+		<label class="w3-left">Harga /per orang</label>
+		<input class="w3-input" type="text" disabled name="harga" value="2.000.000">		
+		<br>
+		<label class="w3-left">Total Harga</label>
+		<input class="w3-input" type="text" disabled name="total">
+		<br>
+		<button class="w3-button w3-white" type="button" onclick="proses3()">Check Out</button>
+		<button class="w3-button w3-white" type="reset">Reset</button>
+	</form>
+	</div>
+
+	<div id="Island" class="w3-container kota w3-animate-zoom w3-center" style="display:none">
+	 <h2 style="text-shadow: 1px 1px 1px grey">Vancouver Island</h2>
+	<img src="aset/3	.jpg" alt="">
+	 <p>
+	    Siapa yang tidak asing dengan foto di atas? Yap benar sekali foto yang pernah menjadi wallpaper perangkat lunak Windows 7 ini benar-benar ada lho.. <br>
+	    Apakah Anda Tertarik untuk mengunjungi tempat yang sangat terkenal ini?
+	 </p>
+
+	 <p>Kami menyediakan tiket, kamar, dan fasilitas lain jika Anda tertarik pergi ke Gurun Namib Selatan ini</p>
+	 <h2>Tiket Terbatas!</h2>
+
+<section id="kontak" class="section">
+		<div class="w3-container w3-center">
+			<div class="w3-row">
+				<div class="w3-col m3">
+					<i class="fa fa-hand-holding-heart w3-red w3-padding-small w3-rounded-xlarge"></i>
+					<h3>Nyaman</h3>
+					
+				</div>			
+
+				<div class="w3-col m3">
+					<i class="fa fa-dollar-sign w3-red w3-padding-small w3-rounded-xlarge"></i>
+					<h3>Terjangkau</h3>
+					
+				</div>			
+
+				<div class="w3-col m3">
+					<i class="fa fa-cubes w3-red w3-padding-small w3-rounded-xlarge"></i>
+					<h3>Lengkap</h3>
+					
+				</div>		
+
+				<div class="w3-col m3">
+					<i class="fa fa-glass-cheers w3-red w3-padding-small w3-rounded-xlarge"></i>
+					<h3>Pengalaman Super Indah </h3>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+	<h2>Jika tertarik silahkan isi form pendaftaran di bawah ini <br><i class="far fa-hand-point-down"></i></h2>
+	    <form class="w3-form" name="form1">
+		<label class="w3-left">Nama</label>
+		<input class="w3-input" type="text" required>
+		<br>
+		<label class="w3-left">Jumlah</label>
+		<input class="w3-input" type="number" name="jumlah" required>	
+		<br>
+		<label class="w3-left">Harga /per orang</label>
+		<input class="w3-input" type="text" disabled name="harga" value="2.000.000">		
+		<br>
+		<label class="w3-left">Total Harga</label>
+		<input class="w3-input" type="text" disabled name="total">
+		<br>
+		<button class="w3-button w3-white" type="button" onclick="proses2()">Check Out</button>
+		<button class="w3-button w3-white" type="reset">Reset</button>
+	</form>
+	</p>
+
+	</div>
+
+	<div id="Hutan" class="w3-container kota w3-animate-zoom w3-center" style="display:none">
+	 <h2 style="text-shadow: 1px 1px 1px grey">Hutan Moawi</h2>
+	 <img src="aset/4.jpg" alt="" >
+	 <p>Bosan liburan ke pantai? Bosan liburan ke Mall? Bosan diam saja di rumah?</p>
+	 <p>Nikmati dan rasakan serunya dan indahnya Hutan Moawi ini, hutan subtropis yang sangat menawan di mata, apalagi saat hujan dan sun set </p>
+	 <p>Ayo liburan ke Hutan Moawi</p>
+	  <p>Kami menyediakan tiket, rumah pohon, dan fasilitas lain jika Anda tertarik pergi ke Hutan Moawi</p>
+	  <h2>Tiket Terbatas!</h2>
+
+<section id="kontak" class="section">
+		<div class="w3-container w3-center">
+			<div class="w3-row">
+				<div class="w3-col m3">
+					<i class="fa fa-hand-holding-heart w3-red w3-padding-small w3-rounded-xlarge"></i>
+					<h3>Nyaman</h3>
+					
+				</div>			
+
+				<div class="w3-col m3">
+					<i class="fa fa-dollar-sign w3-red w3-padding-small w3-rounded-xlarge"></i>
+					<h3>Terjangkau</h3>
+					
+				</div>			
+
+				<div class="w3-col m3">
+					<i class="fa fa-cubes w3-red w3-padding-small w3-rounded-xlarge"></i>
+					<h3>Lengkap</h3>
+					
+				</div>		
+
+				<div class="w3-col m3">
+					<i class="fa fa-glass-cheers w3-red w3-padding-small w3-rounded-xlarge"></i>
+					<h3>Pengalaman Super Indah </h3>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+	<h2>Jika tertarik silahkan isi form pendaftaran di bawah ini <br><i class="far fa-hand-point-down"></i></h2>
+	    <form class="w3-form" name="form">
+		<label class="w3-left">Nama</label>
+		<input class="w3-input" type="text" required>
+		<br>
+		<label class="w3-left">Jumlah</label>
+		<input class="w3-input" type="number" name="jumlah" required>	
+		<br>
+		<label class="w3-left">Harga /per orang</label>
+		<input class="w3-input" type="text" disabled name="harga" value="2.000.000">		
+		<br>
+		<label class="w3-left">Total Harga</label>
+		<input class="w3-input" type="text" disabled name="total">
+		<br>
+		<button class="w3-button w3-white" type="button" onclick="proses()">Check Out</button>
+		<button class="w3-button w3-white" type="reset">Reset</button>
+	</form>
+	</div>
+
+	<div id="Kontak" class="profil w3-container kota w3-animate-zoom w3-center" style="display:none">
+	 <h2 style="text-shadow: 1px 1px 1px grey;">Kontak (Profil)</h2> <br>
+	 		<div class="w3-row-padding">
+				<div class="w3-col m5">
+					<br>
+					<br>
+
+		 <img src="aset/profil.png"> <br>
+		 <p style="margin-bottom: 20%; margin-top: 5%">Mikhael | 1F 3 | 10121089</p>
+		</div>	
+
+		<div class="w3-col m7">
+ <form class="w3-form">
+		<label class="w3-left">Nama</label>
+		<input class="w3-input" type="text" required>
+		<br>
+		<label class="w3-left">Pesan</label>
+		<input class="w3-input" type="text" required>	
+		<br>
+		<button class="w3-button w3-left w3-green" type="submit" >Kirim</button>
+		</div>
+	</div>
+
+	<script>
+		function openKota(namaKota) {
+			var i;
+			var x = document.getElementsByClassName("kota");
+			for (i = 0; i < x.length; i++) {
+			 x[i].style.display = "none"; 
+			 }
+			document.getElementById(namaKota).style.display = "block"; 
+		}
+
+
+		var slideIndex = 1;
+			showSlide(slideIndex);
+
+		function nextslide(n){
+			showSlide(slideIndex += n);
+		}
+
+		function dotslide(n) {
+			showSlide(slideIndex = n)
+		}
+
+		function showSlide(n) {
+			var i;
+			var slides = document.getElementsByClassName('imgslide');
+			var dot = document.getElementsByClassName('dot');
+
+			if (n > slides.length) {
+				slideIndex = 1
+			}
+
+			if (n < 1) {
+				slideIndex = slides.length;
+			}
+
+			for (i = 0; i <slides.length; i++) {
+				slides[i].style.display = "none";
+			}
+
+			for (i = 0; i <slides.length; i++) {
+				dot[i].className = dot[i].className.replace(" active", "");
+			}
+
+			slides[slideIndex - 1].style.display = "block";
+
+			dot[slideIndex - 1].className += " active";
+
+		}
+
+
+		function proses() {
+			var jumlah = document.form.jumlah.value;
+			var harga = 2000000;
+			var total = jumlah * harga; 
+			document.form.total.value = total
+		}	
+		function proses2() {
+			var jumlah = document.form1.jumlah.value;
+			var harga = 2000000;
+			var total = jumlah * harga; 
+			document.form1.total.value = total
+		}	
+		function proses3() {
+			var jumlah = document.form2.jumlah.value;
+			var harga = 2000000;
+			var total = jumlah * harga; 
+			document.form2.total.value = total
+		}		
+		function proses4() {
+			var jumlah = document.form3.jumlah.value;
+			var harga = 2000000;
+			var total = jumlah * harga; 
+			document.form3.total.value = total
+
+		}
+
+
+	</script>
+
+
+</body>
+</html>
+
+<!-- sumber :https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.indo-asia.com%2Fpelatihan-coc-fsc-industry%2F&psig=AOvVaw0XiF8tDfgx7k7buRe2AaKd&ust=1643181308347000&source=images&cd=vfe&ved=0CAgQjRxqFwoTCNiT9OetzPUCFQAAAAAdAAAAABAN -->
+
+<!-- https://www.google.com/url?sa=i&url=https%3A%2F%2Fmipa.unnes.ac.id%2Fssc%2Findex.php%2Fprofil%2F&psig=AOvVaw3GHE7i0NokP3kX0q7lIsFV&ust=1643184107412000&source=images&cd=vfe&ved=0CAgQjRxqFwoTCICq_J-4zPUCFQAAAAAdAAAAABAD -->
+
+<!-- Windowns 7 wallpaper -->
